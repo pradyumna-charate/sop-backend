@@ -10,7 +10,7 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express(); // Create an Express app
-const port = 3000; // Define the port number
+const port = process.env.PORT || 4000; // Define the port number
 
 // Connect to MongoDB using Mongoose
 mongoose.connect('mongodb+srv://komald:XD1nSooMpmlJ5lnR@cluster0.qbxnwx0.mongodb.net/', {
